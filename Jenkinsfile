@@ -7,7 +7,9 @@ pipeline {
       }
     }
     stage('Execute the Code'){
-      pwsh node app.js
+       steps {
+            pwsh 'node app.js'
+      }
     }
   }
 }
