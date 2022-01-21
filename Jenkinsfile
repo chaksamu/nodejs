@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage('Checkout Code'){
       steps {
-       git 'https://github.com/chaksamu/nodejs.git'
+       git branch: 'main', url: 'https://github.com/chaksamu/nodejs.git'
       }
     }
     stage('Execute the Code'){
